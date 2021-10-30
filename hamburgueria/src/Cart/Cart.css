@@ -1,0 +1,25 @@
+.Cart {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 365px;
+  height: 65px;
+  color: #ffffff;
+  background: #27ae60;
+  border-radius: 5px 5px 0px 0px;
+}
+.itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 365px;
+  height: 158px;
+}

@@ -1,0 +1,153 @@
+.card_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  justify-content: space-between;
+  width: 300px;
+  height: 346px;
+  margin: 20px;
+}
+
+.card_figure {
+  display: flex;
+  background: #f5f5f5;
+  justify-content: center;
+  width: 300px;
+  max-height: 180px;
+}
+.card_figure img {
+  align-self: center;
+  background-size: contain;
+}
+
+.card_name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  margin-left: 20px;
+}
+.card_category {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+  margin-left: 20px;
+}
+.card_price {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #27ae60;
+  margin-left: 20px;
+}
+button {
+  background-color: #27ae60;
+  width: 106px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 0px 20px 0px 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+@media (min-width: 700px) {
+  .card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 300px;
+    height: 346px;
+    margin: 20px;
+  }
+
+  .card_figure {
+    display: flex;
+    background: #f5f5f5;
+    justify-content: center;
+    width: 300px;
+    max-height: 180px;
+  }
+  .card_figure img {
+    align-self: center;
+    background-size: contain;
+  }
+
+  .card_name {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin-left: 20px;
+  }
+  .card_category {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    margin-left: 20px;
+  }
+  .card_price {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #27ae60;
+    margin-left: 20px;
+  }
+  button {
+    background-color: #27ae60;
+    width: 106px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 15px;
+    padding: 0px 20px 0px 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 20px;
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: darkgreen;
+  }
+}

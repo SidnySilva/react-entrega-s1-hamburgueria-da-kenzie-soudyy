@@ -1,3 +1,5 @@
+import Cart from "../Cart";
+
 const Product = ({ handleClick, product }) => {
   return (
     <div>
