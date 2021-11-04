@@ -1,5 +1,16 @@
-.itens_cointainer {
+/* .itens_cointainer {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+} */
+.App {
+  overflow-x: hidden;
+}
+@media (min-width: 700px) {
+  .itens_cointainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

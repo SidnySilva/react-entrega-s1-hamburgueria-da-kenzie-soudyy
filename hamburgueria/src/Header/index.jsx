@@ -1,30 +1,30 @@
 import "./header.css";
 import { useState } from "react";
-const Header = ({ showProdutcs }) => {
+
+const Header = ({ showProducts }) => {
   const [itemFilter, setItemFilter] = useState("");
   return (
     <header className="header">
       <div>
-        <span className="burger">Burger </span>
-        <span className="kenzie">kenzie</span>
+        <span className="burger">Harcker's </span>
+        <span className="kenzie">burguer</span>
       </div>
 
-      <form className="form">
+      <div className="form">
         <input
           className="input"
           placeholder="Digitar Pesquisa"
           type="text"
-          value={itemFilter}
-          onChange={(evt) => setItemFilter(evt.target.value)}
+          onChange={(evt) => showProducts(evt.target.value)}
         />
         <button
           type="button"
           className="search"
-          onclick={() => showProdutcs(itemFilter)}
+          onClick={() => console.log("Inteditado")}
         >
           Pesquisar
         </button>
-      </form>
+      </div>
     </header>
   );
 };
