@@ -9,25 +9,25 @@ const Cart = ({ cart, cartTotal, setCurrentSale }) => {
   return (
     <>
       {cart.length === 0 ? (
-        <section className="Cart">
-          <header className="title">
+        <section className='Cart'>
+          <header className='title'>
             <p>Carrinho de compras</p>
           </header>
 
-          <div className="empty">
+          <div className='empty'>
             <h2>Sua sacola está vazia </h2>
             <p>adicione itens</p>
           </div>
         </section>
       ) : (
-        <section className="filled">
-          <header className="title">
+        <section className='filled'>
+          <header className='title'>
             <p>Carrinho de compras</p>
           </header>
-          <div className="cart_item">
-            <div className="itens">
+          <div className='cart_item'>
+            <div className='itens'>
               {cart.map((item) => (
-                <div className="cart" key={item.id}>
+                <div className='cart' key={item.id}>
                   <CartProduct
                     products={item}
                     cart={cart}
@@ -36,12 +36,12 @@ const Cart = ({ cart, cartTotal, setCurrentSale }) => {
                 </div>
               ))}
             </div>
-            <div className="cart_pay">
-              <div className="total">
+            <div className='cart_pay'>
+              <div className='total'>
                 <span>Total</span>
                 <p>R$ {cartTotal},00</p>
               </div>
-              <button className="remove_all" onClick={() => setCurrentSale([])}>
+              <button className='remove_all' onClick={() => setCurrentSale([])}>
                 Remover Todos
               </button>
             </div>

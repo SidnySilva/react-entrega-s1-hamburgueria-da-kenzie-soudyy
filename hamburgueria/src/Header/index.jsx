@@ -4,24 +4,23 @@ import { useState } from "react";
 const Header = ({ showProducts }) => {
   const [itemFilter, setItemFilter] = useState("");
   return (
-    <header className="header">
+    <header className='header'>
       <div>
-        <span className="burger">Harcker's </span>
-        <span className="kenzie">burguer</span>
+        <span className='burger'>Harcker's </span>
+        <span className='kenzie'>burguer</span>
       </div>
 
-      <div className="form">
+      <div className='form'>
         <input
-          className="input"
-          placeholder="Digitar Pesquisa"
-          type="text"
-          onChange={(evt) => showProducts(evt.target.value)}
+          className='input'
+          placeholder='Digitar Pesquisa'
+          type='text'
+          onChange={(evt) => setItemFilter(evt.target.value)}
         />
         <button
-          type="button"
-          className="search"
-          onClick={() => console.log("Inteditado")}
-        >
+          type='button'
+          className='search'
+          onClick={() => showProducts(itemFilter)}>
           Pesquisar
         </button>
       </div>

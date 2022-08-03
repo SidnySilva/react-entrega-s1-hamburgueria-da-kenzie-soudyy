@@ -56,11 +56,10 @@ function App() {
   const [cartTotal, setCartTotal] = useState(0);
 
   function showProducts(text) {
-    console.log(products);
     setFilteredProducts(
       products.filter((item) => {
         return item.name.toLowerCase().indexOf(text.toLowerCase()) > -1;
-      })
+      }),
     );
   }
 
@@ -82,19 +81,19 @@ function App() {
   }, [currentSale]);
 
   return (
-    <div className="App">
-      <Header showProducts={showProducts} />
-      <section className="itens_cointainer">
+    <div className='App'>
+      <Header showProducts={showProducts} />{" "}
+      <section className='itens_cointainer'>
         <MenuContainer
           products={filteredProducts.length === 0 ? products : filteredProducts}
           handleClick={handleClick}
-        />
+        />{" "}
         <Cart
           cart={currentSale}
           cartTotal={cartTotal}
           setCurrentSale={setCurrentSale}
-        />
-      </section>
+        />{" "}
+      </section>{" "}
     </div>
   );
 }
