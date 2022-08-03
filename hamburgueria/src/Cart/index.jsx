@@ -9,7 +9,7 @@ const Cart = ({ cart, cartTotal, setCurrentSale }) => {
   return (
     <>
       {cart.length === 0 ? (
-        <div className="Cart">
+        <section className="Cart">
           <header className="title">
             <p>Carrinho de compras</p>
           </header>
@@ -18,22 +18,24 @@ const Cart = ({ cart, cartTotal, setCurrentSale }) => {
             <h2>Sua sacola está vazia </h2>
             <p>adicione itens</p>
           </div>
-        </div>
+        </section>
       ) : (
-        <div className="cart_item">
+        <section className="filled">
           <header className="title">
             <p>Carrinho de compras</p>
           </header>
-          <div className="itens">
-            {cart.map((item) => (
-              <div className="cart" key={item.id}>
-                <CartProduct
-                  products={item}
-                  cart={cart}
-                  setCurrentSale={setCurrentSale}
-                />
-              </div>
-            ))}
+          <div className="cart_item">
+            <div className="itens">
+              {cart.map((item) => (
+                <div className="cart" key={item.id}>
+                  <CartProduct
+                    products={item}
+                    cart={cart}
+                    setCurrentSale={setCurrentSale}
+                  />
+                </div>
+              ))}
+            </div>
             <div className="cart_pay">
               <div className="total">
                 <span>Total</span>
@@ -44,7 +46,7 @@ const Cart = ({ cart, cartTotal, setCurrentSale }) => {
               </button>
             </div>
           </div>
-        </div>
+        </section>
       )}
     </>
   );

@@ -17,9 +17,12 @@ const CartProduct = ({ products, cart, setCurrentSale }) => {
           <span className="cartProduct_category">{products.category}</span>
         </div>
       </div>
-      <button className="remove" onClick={() => removeItem(products)}>
-        remover
-      </button>
+      <div className="cartProduct_price">
+        <button className="remove" onClick={() => removeItem(products)}>
+          remover
+        </button>
+        <p className="price">R$ {products.price}.00</p>
+      </div>
     </div>
   );
 };
